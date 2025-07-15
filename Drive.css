@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 20px 0;
+  background-color: #f4f4f4;
+  background-image: url('sfondi/drive1.png');
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background: #3498dbca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.285);
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.image-container img {
+  max-height: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 40px;
+  background-color: #00000074;
+}
+
+.grid-item {
+  background-color: #00000054;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img, .grid-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.grid-item video {
+  object-fit: contain;
+}
+
+.download-link {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 10px) scale(0);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.grid-item:hover .download-link {
+  opacity: 1;
+  transform: translate(-50%, -10px) scale(1);
+}
+
+.download-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(72, 255, 218, 0.8);
+  transition: width 0.5s ease;
+  z-index: -1;
+}
+
+.download-link:hover::before {
+  width: 100%;
+}
+
+.download-link:hover {
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 20;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
+.modal-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
