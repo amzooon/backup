@@ -12,14 +12,23 @@ document.addEventListener("DOMContentLoaded", () => {
     item.className = "grid-item";
 
     let mediaEl;
+
     if (file.type === "image") {
       mediaEl = document.createElement("img");
+      mediaEl.src = file.path;
       mediaEl.alt = file.name;
     } else if (file.type === "video") {
       mediaEl = document.createElement("video");
       mediaEl.controls = true;
+      mediaEl.muted = true;
+      mediaEl.playsInline = true;
+      mediaEl.style.backgroundColor = "black"; // fallback se non carica
+
+      const source = document.createElement("source");
+      source.src = file.path;
+      source.type = "video/mp4"; // puoi modificarlo dinamicamente se necessario
+      mediaEl.appendChild(source);
     }
-    mediaEl.src = file.path;
 
     // Link di download
     const downloadLink = document.createElement("a");
@@ -38,10 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
         modalImage.src = file.path;
         modalImage.style.display = "block";
         modalVideo.style.display = "none";
+        modalVideo.pause();
       } else {
         modalVideo.src = file.path;
         modalVideo.style.display = "block";
         modalImage.style.display = "none";
+        modalImage.src = "";
       }
       downloadButton.href = file.path;
       downloadButton.download = file.name;
@@ -50,8 +61,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Chiudi modale
-  closeBtn.onclick = () => (modal.style.display = "none");
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+    modalVideo.pause();
+  };
+  
   window.onclick = (event) => {
-    if (event.target === modal) modal.style.display = "none";
+    if (event.target === modal) {
+      modal.style.display = "none";
+      modalVideo.pause();
+    }
   };
 });
