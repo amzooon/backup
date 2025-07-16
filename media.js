@@ -175,14 +175,14 @@ const mediaFiles = [
     "path": "media/IMG_0589.MOV"
   },
   {
-    "name": "IMG_0590.MP4",
+    "name": "IMG_0590.mp4",
     "type": "video",
-    "path": "media/IMG_0590.MP4"
+    "path": "media/IMG_0590.mp4"
   },
   {
-    "name": "IMG_0618.MP4",
+    "name": "IMG_0618.mp4",
     "type": "video",
-    "path": "media/IMG_0618.MP4"
+    "path": "media/IMG_0618.mp4"
   },
   {
     "name": "IMG_0643-1.MOV",
@@ -220,19 +220,19 @@ const mediaFiles = [
     "path": "media/IMG_0849.jpg"
   },
   {
-    "name": "IMG_0926.MP4",
+    "name": "IMG_0926.mp4",
     "type": "video",
-    "path": "media/IMG_0926.MP4"
+    "path": "media/IMG_0926.mp4"
   },
   {
-    "name": "IMG_0945.MP4",
+    "name": "IMG_0945.mp4",
     "type": "video",
-    "path": "media/IMG_0945.MP4"
+    "path": "media/IMG_0945.mp4"
   },
   {
-    "name": "IMG_1045.MP4",
+    "name": "IMG_1045.mp4",
     "type": "video",
-    "path": "media/IMG_1045.MP4"
+    "path": "media/IMG_1045.mp4"
   },
   {
     "name": "IMG_1181.MOV",
@@ -265,9 +265,9 @@ const mediaFiles = [
     "path": "media/IMG_2214.jpg"
   },
   {
-    "name": "IMG_2615.MP4",
+    "name": "IMG_2615.mp4",
     "type": "video",
-    "path": "media/IMG_2615.MP4"
+    "path": "media/IMG_2615.mp4"
   },
   {
     "name": "IMG_2696.jpg",
@@ -460,9 +460,9 @@ const mediaFiles = [
     "path": "media/IMG_3338.jpg"
   },
   {
-    "name": "IMG_3378.MP4",
+    "name": "IMG_3378.mp4",
     "type": "video",
-    "path": "media/IMG_3378.MP4"
+    "path": "media/IMG_3378.mp4"
   },
   {
     "name": "IMG_3401.jpg",
@@ -760,24 +760,24 @@ const mediaFiles = [
     "path": "media/IMG_4316.jpg"
   },
   {
-    "name": "IMG_6179.MP4",
+    "name": "IMG_6179.mp4",
     "type": "video",
-    "path": "media/IMG_6179.MP4"
+    "path": "media/IMG_6179.mp4"
   },
   {
-    "name": "IMG_9406.MP4",
+    "name": "IMG_9406.mp4",
     "type": "video",
-    "path": "media/IMG_9406.MP4"
+    "path": "media/IMG_9406.mp4"
   },
   {
-    "name": "IMG_9453.MP4",
+    "name": "IMG_9453.mp4",
     "type": "video",
-    "path": "media/IMG_9453.MP4"
+    "path": "media/IMG_9453.mp4"
   },
   {
-    "name": "IMG_9664.MP4",
+    "name": "IMG_9664.mp4",
     "type": "video",
-    "path": "media/IMG_9664.MP4"
+    "path": "media/IMG_9664.mp4"
   },
   {
     "name": "NYMPHO Hooked on Kylie Quinn  Pornhubcom480.mp4",
@@ -1080,9 +1080,9 @@ const mediaFiles = [
     "path": "media/video5809722851648869348.mp4"
   },
   {
-    "name": "video5821401159784469912.mov",
+    "name": "video5821401159784469912.MOV",
     "type": "video",
-    "path": "media/video5821401159784469912.mov"
+    "path": "media/video5821401159784469912.MOV"
   },
   {
     "name": "video5821401159784469912.mp4",
