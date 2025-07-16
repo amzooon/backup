@@ -7,7 +7,7 @@ const mediaFiles = [
   {
     "name": "-5231183843931267385.mp4",
     "type": "video",
-    "path": "media/-5231183843931267385.mp4"
+    "path": "backup/media/-5231183843931267385.mp4"
   },
   {
     "name": "256594514946386498.mp4",
