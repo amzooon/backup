@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const downloadButton = document.getElementById("downloadButton");
   const closeBtn = document.getElementsByClassName("close")[0];
 
-  // Carica media dalla variabile mediaFiles definita in media.js
   mediaFiles.forEach(file => {
     const item = document.createElement("div");
     item.className = "grid-item";
@@ -22,15 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
       mediaEl.controls = true;
       mediaEl.muted = true;
       mediaEl.playsInline = true;
-      mediaEl.style.backgroundColor = "black"; // fallback se non carica
+      mediaEl.style.backgroundColor = "black";
 
       const source = document.createElement("source");
       source.src = file.path;
-      source.type = "video/mp4"; // puoi modificarlo dinamicamente se necessario
+      source.type = "video/mp4"; // assume mp4, ma può essere dinamico
       mediaEl.appendChild(source);
     }
 
-    // Link di download
     const downloadLink = document.createElement("a");
     downloadLink.href = file.path;
     downloadLink.download = file.name;
@@ -48,12 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
         modalImage.style.display = "block";
         modalVideo.style.display = "none";
         modalVideo.pause();
-      } else {
-        modalVideo.src = file.path;
-        modalVideo.style.display = "block";
+        modalVideo.src = "";
+      } else if (file.type === "video") {
         modalImage.style.display = "none";
         modalImage.src = "";
+
+        modalVideo.src = file.path;
+        modalVideo.style.display = "block";
+        modalVideo.load();
       }
+
       downloadButton.href = file.path;
       downloadButton.download = file.name;
       modal.style.display = "block";
@@ -65,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "none";
     modalVideo.pause();
   };
-  
+
   window.onclick = (event) => {
     if (event.target === modal) {
       modal.style.display = "none";
