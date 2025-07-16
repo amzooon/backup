@@ -700,11 +700,6 @@ const mediaFiles = [
     "path": "media/IMG_4030.jpg"
   },
   {
-    "name": "IMG_4089.MOV",
-    "type": "video",
-    "path": "media/IMG_4089.MOV"
-  },
-  {
     "name": "IMG_4102.PNG",
     "type": "image",
     "path": "media/IMG_4102.PNG"
@@ -785,11 +780,6 @@ const mediaFiles = [
     "path": "media/IMG_9664.MP4"
   },
   {
-    "name": "Making the young guys desire of sitting on 2 goodsized lollipops come true File 1.mp4",
-    "type": "video",
-    "path": "media/Making the young guys desire of sitting on 2 goodsized lollipops come true File 1.mp4"
-  },
-  {
     "name": "NYMPHO Hooked on Kylie Quinn  Pornhubcom480.mp4",
     "type": "video",
     "path": "media/NYMPHO Hooked on Kylie Quinn  Pornhubcom480.mp4"
@@ -798,21 +788,6 @@ const mediaFiles = [
     "name": "NYMPHO Tiny Asian Vina Sky Stuffed by a Big Cock  Pornhubcom480.mp4",
     "type": "video",
     "path": "media/NYMPHO Tiny Asian Vina Sky Stuffed by a Big Cock  Pornhubcom480.mp4"
-  },
-  {
-    "name": "RPReplay_Final1717082969.mp4",
-    "type": "video",
-    "path": "media/RPReplay_Final1717082969.mp4"
-  },
-  {
-    "name": "RPReplay_Final1721080907.mp4",
-    "type": "video",
-    "path": "media/RPReplay_Final1721080907.mp4"
-  },
-  {
-    "name": "RPReplay_Final1721211520.mp4",
-    "type": "video",
-    "path": "media/RPReplay_Final1721211520.mp4"
   },
   {
     "name": "Reno Gold Takes Peachys Load peachys first Facial  Pornhub Gay1080.MOV",
@@ -1078,11 +1053,6 @@ const mediaFiles = [
     "name": "c26ba52d-5364-4037-8d32-9a22dbe89c6f.mp4",
     "type": "video",
     "path": "media/c26ba52d-5364-4037-8d32-9a22dbe89c6f.mp4"
-  },
-  {
-    "name": "tgfooter1desktop original.mov",
-    "type": "video",
-    "path": "media/tgfooter1desktop original.mov"
   },
   {
     "name": "tgfooter1desktop original.mp4",
