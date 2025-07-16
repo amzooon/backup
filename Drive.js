@@ -6,7 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const downloadButton = document.getElementById("downloadButton");
   const closeBtn = document.getElementsByClassName("close")[0];
 
-  mediaFiles.forEach(file => {
+  // Filtro mediaFiles: escludi file .mov
+  const filteredMedia = mediaFiles.filter(file => {
+    if (file.type === "video") {
+      // Mostra solo video con estensione .mp4 (non .mov)
+      return file.name.toLowerCase().endsWith(".mp4");
+    }
+    // Mostra tutte le immagini
+    return file.type === "image";
+  });
+
+  filteredMedia.forEach(file => {
     const item = document.createElement("div");
     item.className = "grid-item";
 
@@ -25,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const source = document.createElement("source");
       source.src = file.path;
-      source.type = "video/mp4"; // assume mp4, ma può essere dinamico
+      source.type = "video/mp4";
       mediaEl.appendChild(source);
     }
 
