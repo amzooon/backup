@@ -6,7 +6,7 @@ output_file = "media.js"
 
 # Estensioni supportate
 image_ext = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"}
-video_ext = {".mp4", ".webm", ".ogg", ".mov"}  # Aggiunto .mov
+video_ext = {".MP4", ".webm", ".ogg", ".MOV"}  # Aggiunto .mov
 
 media_list = []
 
